@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'WhereTheShadowLies', :exclusive => true do
+  pod "WhereTheShadowLies", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "WhereTheShadowLies", :path => "../"
+
+  pod 'Kiwi'
+  pod 'FBSnapshotTestCase'
+end
